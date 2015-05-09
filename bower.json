@@ -18,5 +18,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "materialize": "~0.96.1",
+    "jquery": "~2.1.4",
+    "animate.css": "~3.2.6"
+  }
 }

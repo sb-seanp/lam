@@ -1,6 +1,5 @@
 var gulp        = require('gulp'),
-    server      = require('gulp-express'),
-    concat      = require('gulp-concat'),
+    gls         = require('gulp-live-server'),
     jade        = require('gulp-jade'),
     stylus      = require('gulp-stylus'),
     nib         = require('nib'),
@@ -35,9 +34,9 @@ gulp.task('jade', function(){
 // Watch for changes and restart server if necessary
 gulp.task('server', function(){
     // Start server
-    server.run({
-        file: 'bin/wulfcode'
-    });
+    var server = gls.new('bin/lam');
+    server.start();
+
     gulp.watch('routes/*.js', ['server']);
     gulp.watch('public/javascripts/*.js', ['lint']);
     gulp.watch('public/stylesheets/*.styl', ['stylus']);
