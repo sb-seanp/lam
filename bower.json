@@ -1,0 +1,22 @@
+{
+  "name": "lam",
+  "version": "1.0.0",
+  "homepage": "http://lam.wulfcode.com",
+  "authors": [
+    "Sean Prasertsit <sean@prasertsit.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sb-seanp/lam.git"
+  },
+  "description": "Personal website for Michael Lam.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
